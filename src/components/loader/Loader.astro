@@ -1,10 +1,10 @@
 ---
 ---
 
-<section class="loader fixed flex justify-center items-center w-full h-screen bg-[var(--orange)] z-50 text-white">
+<section class="loader fixed flex justify-center items-center w-full h-screen bg-[var(--orange)] z-50 text-white p-[10px]">
     <div class="loader__opacity flex flex-col items-center gap-[30px]">
         <h2>GALLETAS ARTESANALES</h2>
-        <div class="loader w-[510px] h-[10px] border-[1px] border-white">
+        <div class="loader w-[510px] h-[10px] border-[1px] border-white max-sm:w-full">
             <span class="h-full w-full bg-white block"></span>
         </div>
     </div>
@@ -14,7 +14,7 @@
     /* LOADER  */
     .loader{
         top: 100%;
-        /* animation: loader 3.5s; */
+        animation: loader 3.5s;
     }
     @keyframes loader {
         0%{

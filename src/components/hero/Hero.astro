@@ -2,11 +2,11 @@
 import HeroSvg from "./HeroSvg.astro";
 ---
 
-<section class="relative w-[100%] h-screen bg-[url(/hero.jpg)] bg-center bg-no-repeat">
+<section class="relative w-[100%] h-screen bg-center bg-no-repeat">
     <HeroSvg />
     
     <img
-        class="absolute w-full bottom-0 px-[70px] pb-[20px]" 
+        class="absolute w-full bottom-0 px-[70px] pb-[20px] max-sm:px-[10px]" 
         src="/hero-tt.png" 
         alt="">
 
@@ -14,6 +14,7 @@ import HeroSvg from "./HeroSvg.astro";
 
 <style>
     section{
+        background-image: radial-gradient(rgba(0, 0, 0, 0.133), rgba(5, 5, 5, 0.527), rgb(0, 0, 0)), url(/hero.jpg);
         background-size: 100%;
         animation: hero .8s;
         animation-delay: 2.8s;
@@ -21,6 +22,13 @@ import HeroSvg from "./HeroSvg.astro";
     @keyframes hero {
         0%{
             background-size: 160%;
+        }
+    }
+    @media screen and (max-width: 1250px){
+        section{
+            background-image: radial-gradient(rgba(0, 0, 0, 0.133), rgba(5, 5, 5, 0.527), rgb(0, 0, 0)), url(/almendra-clasica.jpg);
+            background-size: cover;
+            animation: hero 0s;  
         }
     }
 
