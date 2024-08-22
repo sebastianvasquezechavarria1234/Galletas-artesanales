@@ -1,0 +1,61 @@
+---
+---
+
+<section class="loader fixed flex justify-center items-center w-full h-screen bg-[var(--orange)] z-50 text-white">
+    <div class="loader__opacity flex flex-col items-center gap-[30px]">
+        <h2>GALLETAS ARTESANALES</h2>
+        <div class="loader w-[510px] h-[10px] border-[1px] border-white">
+            <span class="h-full w-full bg-white block"></span>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* LOADER  */
+    .loader{
+        top: 100%;
+        /* animation: loader 3.5s; */
+    }
+    @keyframes loader {
+        0%{
+            top: 0%;
+        }
+        80%{
+            top: 0%;
+        }
+        100%{
+            top: 100%;
+        }
+        
+    }
+    /* LOADER OPACITY */
+    .loader__opacity{
+        animation: loader__opacity 3s;
+        opacity: 0;
+    }
+    @keyframes loader__opacity {
+        0%{
+            opacity: 1;
+        }
+        85%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+        
+    }
+    /* LOADER SPAN */
+    .loader span{
+        animation: loader__span 3s;
+    }
+    @keyframes loader__span {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 100%;
+        }
+        
+    }
+</style>

@@ -1,0 +1,10 @@
+---
+const {title, style} = Astro.props
+---
+
+<p class=`
+    ${style} bg-[var(--beig)] py-[12px] px-[25px] rounded-full border-[1px] border-[var(--orange)]
+    max-sm:py-[3px] max-sm:px-[13px]
+`>
+    {title}
+</p>

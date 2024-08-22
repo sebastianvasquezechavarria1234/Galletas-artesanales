@@ -1,0 +1,63 @@
+---
+import Tab from '../tab/Tab.astro'
+---
+
+<article class="relative z-20 mt-[40px] w-full border-[1px] border-[var(--orange)] bg-[var(--beig)] max-sm:mt-[20px]">
+    <!-- HEADER -->
+     <header>
+        <h3 class="p-[20px] max-sm:p-[10px]">
+            Sabor natural en cada bocado
+        </h3>
+         <!-- HEADER SLIDER -->
+         <div class="slider__card w-full overflow-hidden py-[4px] max-sm:py-[2px]">
+            <p class="text-nowrap">
+                ¿Te preguntas cómo hacer galletas paso a paso? Pues bien, primero coge un recipiente con la capacidad suficiente, introduce la harina y la mantequilla y mezcla bien ambos ingredientes. También precalienta el horno a 190 ºC para empezar a hacer estas sencillas cookies fáciles. ¿Te preguntas cómo hacer galletas paso a paso? Pues bien, primero coge un recipiente con la capacidad suficiente, introduce la harina y la mantequilla y mezcla bien ambos ingredientes. También precalienta el horno a 190 ºC para empezar a hacer estas sencillas cookies fáciles.
+            </p>
+         </div>
+     </header>
+     <!-- BODY DE LA CARD -->
+      <div class="flex max-sm:flex-col">
+        <!-- PICTURE -->
+        <picture class="w-[50%] h-[550px] p-[20px] max-sm:w-full max-sm:h-[70vw] max-sm:p-[10px]">
+            <img 
+                class="w-full h-full object-cover" 
+                src="/description-almendras.jpg" 
+                alt="img picture">
+        </picture>
+        <!--  -->
+        <div class="w-[50%] border-l-[1px] border-[var(--orange)] flex flex-col justify-center items-center gap-[30px] p-[20px] max-sm:border-l-0 max-sm:border-t-[1px] max-sm:w-full">
+            <h3 class="text-center">
+                Simplemente
+                <br>
+                ¡SANO!
+            </h3>
+            <div class="flex flex-wrap gap-[10px] max-w-[400px] justify-center max-sm:gap-[5px]">
+                <Tab 
+                    title="Sin gluten"                    
+                />
+                <Tab 
+                    title="Libre de colesterol"                    
+                />
+                <Tab 
+                    title="Sin conservantes"                    
+                />
+            </div>
+        </div>
+      </div>
+</article>
+
+<style>
+      /* SLIDER CARD HEADER */
+      .slider__card{
+        border-top: 1px solid var(--orange);
+        border-bottom: 1px solid var(--orange);
+    }
+    .slider__card p{
+        animation: slider__card 35s infinite alternate linear;
+    }
+    @keyframes slider__card {
+        100%{
+            transform: translateX(-250%)
+        }
+    }
+</style>

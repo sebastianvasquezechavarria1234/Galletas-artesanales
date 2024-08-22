@@ -1,0 +1,25 @@
+---
+import SliderRepeat from "./SliderRepeat.astro"
+---
+
+<section class="mt-[120px] overflow-hidden py-[25px]">
+    <ul class="slider flex gap-[20px] w-[240%] max-sm:gap-[10px]">
+        <SliderRepeat />
+        <SliderRepeat />
+        <SliderRepeat />
+    </ul>
+
+    <p class="text-center mt-[60px] italic text-[21px] max-sm:text-[16px]">¡Sabores auténticos y nutritivos preparalos ya!</p>
+</section>
+
+<style>
+    .slider{
+        animation: slider 20s infinite linear alternate;
+    }
+    @keyframes slider {
+        100%{
+            transform: translateX(-60%)
+        }
+        
+    }
+</style>

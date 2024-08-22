@@ -21,30 +21,67 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+	@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Quicksand:wght@300..700&display=swap');
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		--orange: #FF3B00;
+		--beig: #f3efe7;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+	*{
+		font-family: "Quicksand", sans-serif;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body{
+		background-color: var(--beig);
+		color: var(--orange);
+	}
+	a, p{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	h1, h2, h3, h4{
+		font-family: "Knewave", system-ui;
+	}
+	h1{
+		font-size: 5rem;
+		text-transform: uppercase;
+		line-height: 85px;
+	}
+	h2{
+		font-size: 3rem;
+		text-transform: uppercase;
+		line-height: 45px;
+	}
+	h3{
+		font-size: 2.3rem;
+		line-height: 35px
+	}
+	h5{
+		font-size: 21px; 
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-style: italic
+	}
+	@media screen and (max-width: 700px){
+		a, p{
+			font-size: 12px;
+		}
+		h1{
+			font-size: 3rem;
+			line-height: 45px
+		}
+		h2{
+			font-size: 2rem;
+			line-height: 30px;
+		}
+		h3{
+			font-size: 1.5rem;
+			line-height: 24px;
+		}
+		h5{
+			font-size: 13px;
+			line-height: 15px
+		}
+		
 	}
 </style>

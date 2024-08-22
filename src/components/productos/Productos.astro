@@ -1,0 +1,52 @@
+---
+import ProductosCard from "./ProductosCard.astro";
+---
+
+<section class="mt-[120px]">
+    <ul class="flex gap-[20px] max-lg:flex-col">
+        <li class="w-[33%] flex flex-col gap-[20px] max-lg:w-full">
+            <ProductosCard
+                title="Galleta clásica"
+                img="/galleta-clasica.jpg"
+                gramos="400"
+             />
+            <ProductosCard
+                title="Almendra clásica"
+                img="/almendra-clasica.jpg"
+                gramos="450"
+             />
+        </li>
+        <li class="w-[33%] flex flex-col gap-[20px] max-lg:w-full">
+            <div class="">
+                <h3 class="mb-[20px]">Pruebe la nueva</h3>
+                <h2>Galleta de mandarina</h2>
+            </div>
+            <ProductosCard
+                title="Galleta con pistacho"
+                img="/galleta-con-pistacho.jpg"
+                gramos="500"
+             />
+            <div class="">
+                <h3 class="mb-[20px]">Almendras 100% naturales</h3>
+                <h2>pura naturaleza an cada bocado</h2>
+            </div>
+            <ProductosCard
+                title="Galleta con regaliz"
+                img="/galleta-clasica.jpg"
+                gramos="450"
+             />
+        </li>
+        <li class="w-[33%] flex flex-col gap-[20px] max-lg:w-full">
+            <ProductosCard
+                title="Galleta con cereza negra"
+                img="/galleta-con-cereza-negra.jpg"
+                gramos="715"
+             />
+            <ProductosCard
+                title="Galleta con ceraza negra"
+                img="/galleta-con-cereza-negra2.jpg"
+                gramos="715"
+             />
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,35 @@
+---
+import MaxWidth from "./MaxWidth.astro";
+---
+
+<footer class="py-[120px] bg-[var(--orange)] text-white max-sm:py-[80px]">
+    <MaxWidth>
+        <div class="max-w-[850px] max-sm:w-full">
+            <h2 class="mb-[20px]">Sabores de calidad</h2>
+            <h1>Recetas de panadería artesanal</h1>
+        </div>
+
+        <div class="flex mt-[100px] max-sm:flex-wrap max-sm:mt-[40px]">
+            <ul class="flex justify-between w-full">
+                <li class="flex flex-col p-[10px]">
+                    <h5>Información</h5>
+                    <a class="max-sm:text-[10px]" href="#">Política de privacidad</a>
+                    <a class="max-sm:text-[10px]" href="#">Política de cookies</a>
+                </li>
+                <span class="h-full w-[1px] block bg-white"></span>
+                <li class="flex flex-col p-[10px]">
+                    <h5>Apoyo al cliente</h5>
+                    <a class="max-sm:text-[10px]" href="#">Terminos y condiciones</a>
+                    <a class="max-sm:text-[10px]" href="#">Servicio al cliente</a>
+                </li>
+                <span class="h-full w-[1px] block bg-white"></span>
+                <li class="flex flex-col p-[10px]">
+                    <h5>Síguenos en:</h5>
+                    <a class="max-sm:text-[10px]" href="#">Facebook</a>
+                    <a class="max-sm:text-[10px]" href="#">instagram</a>
+                    <a class="max-sm:text-[10px]" href="#">Telegram</a>
+                </li>
+            </ul>
+        </div>
+    </MaxWidth>
+</footer>

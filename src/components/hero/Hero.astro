@@ -1,0 +1,27 @@
+---
+import HeroSvg from "./HeroSvg.astro";
+---
+
+<section class="relative w-[100%] h-screen bg-[url(/hero.jpg)] bg-center bg-no-repeat">
+    <HeroSvg />
+    
+    <img
+        class="absolute w-full bottom-0 px-[70px] pb-[20px]" 
+        src="/hero-tt.png" 
+        alt="">
+
+</section>
+
+<style>
+    section{
+        background-size: 100%;
+        animation: hero .8s;
+        animation-delay: 2.8s;
+    }
+    @keyframes hero {
+        0%{
+            background-size: 160%;
+        }
+    }
+
+</style>

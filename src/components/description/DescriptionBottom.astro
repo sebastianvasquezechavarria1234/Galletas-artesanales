@@ -1,0 +1,40 @@
+---
+import Tab from "../tab/Tab.astro"
+---
+
+<article class="relative z-20 pt-[80px] bg-[var(--beig)] overflow-hidden">
+    <ul>
+        <li class="relative flex justify-start border-b-[1px] border-[var(--orange)] py-[20px] max-sm:py-[10px]">
+            <h1 class="max-sm:text-[2rem]">materias primas</h1>
+            <Tab
+                style="absolute left-[50%] bottom-[-20%] z-20"
+                title="Cerezo acido"
+             />
+        </li>
+        <li class="relative flex justify-end border-b-[1px] border-[var(--orange)] py-[20px] max-sm:py-[10px]">
+            <h1 class="max-sm:text-[2rem]">excelente</h1>
+            <Tab
+                style="absolute left-[20%] bottom-[20%] z-20"
+                title="Pistacho"
+             />
+            <Tab
+                style="absolute left-[80%] bottom-[-20%] z-20"
+                title="Almendras"
+             />
+        </li>
+        <li class="relative flex justify-start border-b-[1px] border-[var(--orange)] py-[20px] max-sm:py-[10px]">
+            <h1 class="max-sm:text-[2rem]">para probar</h1>
+            <Tab
+                style="absolute left-[40%] bottom-[20%] z-20"
+                title="Regaliz"
+            />
+        </li>
+        <li class="relative flex justify-end border-b-[1px] border-[var(--orange)] py-[20px] max-sm:py-[10px]">
+            <h1 class="max-sm:text-[2rem]">inconfundible</h1>
+            <Tab
+                style="absolute left-[70%] top-[-20%] z-20"
+                title="Clementinas"
+            />
+        </li>
+    </ul>
+</article>
